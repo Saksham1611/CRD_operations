@@ -7,12 +7,13 @@ x=CRD()
 class TestD(unittest.TestCase):
 
     def test(self):
-        self.assertEqual(sum([1, 2, 3]), 6, "")
+        self.assertEqual(x.create("VarunSehgal",1700360),None,msg="No message Displayed")
+        self.assertEqual(x.create("VarunSehgal",1700360),""key is already Present"",msg="Message displayed should be key is already Present")
+        # self.assertEqual(x.create("VarunSehgal",1700360),None,msg="No message Displayed")
+        # self.assertEqual(x.create("VarunSehgal",1700360),None,msg="No message Displayed")
+        # self.assertEqual(x.create("VarunSehgal",1700360),None,msg="No message Displayed")
 
-    def test1(self):
-        self.assertEqual(sum((1, 2, 2)), 6, "Should be 6")
-
-    def test2(self):
+    # def test2(self):
 
 if __name__ == '__main__':
     unittest.main()
